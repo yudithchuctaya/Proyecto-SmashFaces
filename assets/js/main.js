@@ -1,38 +1,63 @@
 //function especificamente del juego
 // $(function(){
+swal("EMPESAMOS EL JUEGO", "Listo!");
 
-	var i =0;
-    var objet=[];
-	var  score = 0;
+	var i = 0;
+  var numeroAleatorio=[i];
 	var nombre_imput = $('#ingresar_name');
-    var comprobar = $('#comprobar');
-    var puntos = 0;
+  var comprobar = $('#comprobar');
+  var puntos = 0;
 
-    function randomImage(min, max) {
-	  var numero = Math.random() * (max - min) + min;
-	  var entero = Math.floor(numero);
-	  return entero;
-	};
+var sedes=[
+  {
+    pais:"mexico",
+    coders:mexico
+
+  },
+    {
+    pais:"peru",
+    coders:peru
+
+  },
+
+  {
+    pais:"chile",
+    coders:chile
+
+  }];
+
+
+var coders_mexico=[
+"andrea.jpg","carito.jpg","ariadna.jpg","cristy.jpg","paola.jpg","teresa.jpg"
+];
+
+function imagenAleatoria(coders_mexico){
+  
+    var elemento=document.body
+    var imagenes=coders_mexico;
+    
+    var aleatorio=Math.floor(Math.random()*imagenes);
+   
+    // imgContainer="<img src=\""+aleatorio+".png\"></img>"
+    // setTimeout(imagenAleatoria,1000)
+    return aleatorio;
+}
+
+
+// var imgContainer = $('<div class="col-md-4 selection></div>');
+//  imgContainer.append(foto);
+
+function mostrarImagenes(array,objet){
+  var objet=[];
+  numeroAleatorio=randomImage(0, nombres.length);
+ var imagen="fotos/" + imagenes[numeroAleatorio];
+ var mostrar=imagenAleatoria(objet);
+imgContainer.attr("src",coders_mexico);
+console.log(mostrar);
+}
 
 
 
-// var sedes=[
-// 	{
-// 		pais:"mexico",
-// 		coders:mexico
-
-// 	},
-// 		{
-// 		pais:"peru",
-// 		coders:peru
-
-// 	},
-
-// 	{
-// 		pais:"chile",
-// 		coders:chile
-
-// 	}];
 
 //imagenes aleatorias
 
@@ -43,10 +68,12 @@
 //    return newImagen;
 
 
+//al seleccionar la sedes 
+
 $("select").change(function(e){ 
   e.preventDefault();
   var option = $('#select').val();
-  if(option == "peru"){
+  if(option == "sede"){
     $('#fotos-mexico').addClass("none");
     $('#fotos-peru').toggleClass("none");
      $('#fotos-chile').toggleClass("none");
@@ -55,13 +82,14 @@ $("select").change(function(e){
     $('#fotos-mexico').toggleClass("none");
      $('#fotos-chile').toggleClass("none");
   }
+  swal("Bien escogiste la sede"+sede );
 });
 
 
 
 
   // var parent = $('<div class="col-md-10 black></div>');
-  // var imgContainer = $('<div class="col-md-4 selection></div>');
+  
   // var formComplet = $('<div class="col-md-4 complet form-group"></div>');
   // var puntaje = $('<p class="score-punt">Puntos:<span class="puntaje"  id="score"> 0 </span>puntos</p>');
   // var label = $('<label for="usr">Ingrese su nombre:</label>');
@@ -77,7 +105,7 @@ $("select").change(function(e){
   // formContainer.append(alerta);
   //  formContainer.append(puntaje);
   // parent.append(formComplet);
-var imagenRandom = function (max,min){
+
 
 $(function(){
    var imgPeru= $('#fotos-peru');
@@ -153,7 +181,6 @@ $(function(){
 //    return newImagen;
 
 
-}
 
 
 

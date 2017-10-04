@@ -1,4 +1,4 @@
-var Peru=[
+var peru=[
 {
 	imagen:"andrea.jpg",
 	nombre:"andrea"

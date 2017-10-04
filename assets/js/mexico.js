@@ -1,4 +1,4 @@
-var Mexico=[
+var mexico=[
 {
 	imagen:"andrea.jpg",
 	nombre:"andrea"

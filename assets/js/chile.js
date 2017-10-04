@@ -1,4 +1,4 @@
-var Chile=[
+var chile=[
 {
 	imagen:"arantza.jpg",
 	nombre:"arantza"
