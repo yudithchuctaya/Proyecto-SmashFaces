@@ -1,0 +1,25 @@
+var Peru=[
+{
+	imagen:"andrea.jpg",
+	nombre:"andrea"
+},
+{
+	imagen:"berenisse.jpg",
+	nombre:"berenisse"
+},
+{
+	imagen:"caterina.jpg",
+	nombre:"caterina"
+},
+{
+	imagen:"daniela.jpg",
+	nombre:"daniela"
+},
+{
+	imagen:"francisca.jpg",
+	nombre:"francisca"
+},
+{
+	imagen:"katerine.jpg",
+	nombre:"katerine"
+}];

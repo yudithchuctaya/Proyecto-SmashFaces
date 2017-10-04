@@ -1,0 +1,25 @@
+var Chile=[
+{
+	imagen:"arantza.jpg",
+	nombre:"arantza"
+},
+{
+	imagen:"daguiana.jpg",
+	nombre:"daguiana"
+},
+{
+	imagen:"elizabeth.jpg",
+	nombre:"elizabeth"
+},
+{
+	imagen:"janine.jpg",
+	nombre:"janine"
+},
+{
+	imagen:"more.jpg",
+	nombre:"more"
+},
+{
+	imagen:"rosario.jpg",
+	nombre:"rosario"
+}];

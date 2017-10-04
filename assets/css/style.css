@@ -3,14 +3,28 @@
     padding: 0px; 
     background:#a30012;
     color: #ccc;
+   /* outline: 2px solid white;*/
 }
 .text h1{
 text-align: center;
  font-family: 'Rokkitt', serif;
 }
+.text h2{
+    /*text-align: center;*/
+  font-family: 'Rokkitt', serif;
+}
+
 .text{
-    text-align: center;
+ 
     font-family: 'Open Sans', sans-serif;
+}
+
+hr{
+  text-align: left;
+  margin-left: 0;
+  width: 60px;
+  color: black;
+  border-style: solid;
 }
 .btn{
 background: #F9A91A;
@@ -24,44 +38,40 @@ background-position: center;
     margin-top: 5%;
     margin-left: 8%;
 }
-.complet{
-  
-    margin-left: 60%;
 
-}
 #ocultar,#mostrar{
     margin: 8px;
 }
 /*IMAGENES CODERS*/
 
-.chile:hover{
+.perubian:hover{
     width: 250px;
     height: 250px;
 }
-.lima5:hover{
+.mexic:hover{
     width: 250px;
     height: 250px;
 }
-.lima6:hover{
+.chil:hover{
     width: 250px;
     height: 250px;
 }
 
-.lima5{
+.mexic{
     width: 200px;
     height: 200px;
     margin: 10px;
     border-radius: 10px;
     text-align: center;
 }
-.lima6{
+.chil{
     width: 200px;
     height: 200px;
     margin: 10px;
     border-radius: 10px;
     text-align: center;
 }
-.chile{
+.perubian{
     width: 200px;
     height: 200px;
     margin: 10px;
@@ -81,15 +91,24 @@ background-position: center;
     color: #000;
     }
 
-#lima-5,#lima-6 ,#chile-4{
+#mexico,#chile ,#peru{
 margin-left: 20%;
 }
 .btn{
         color: #000;
 }
 .selection{
-    width: 100%;
-    background: white;
+    width: 80%;
+ 
     margin-left: 10%;
-    margin-top: 5%; 
+    margin-top: 3%;
+    
+}
+.complet{
+    width: 100%;
+    height: 200px;
+    margin-left: 60%;
+   /* margin-top: -24%;*/
+    border-radius: 8px;
+
 }

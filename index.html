@@ -14,58 +14,61 @@
 	<div class="row">
 		<div class="col-md-12 text">
 		<h1>JUEGO</h1>
-			<h1>
+			<h2>
 				Smash Faces
-			</h1>
+			</h2>
+			<hr>
 			<p>Bienvenidas al juego de Smach Faces,tu mision es poder identificar a todas tus compañeras de clase integrado para ellos su nombre .Tiene 5 oportunidades antes de perder 1 punto y pasar a la siguiente.</p>
 
 		</div>
 		<div class="col-md-12 option">
 			Elige tu sede:
 			<select  id ="select">
-				<option value="chile4">4ta Promocion Chile</option>
-				<option value="lima5">5ta Promocion Lima</option>
-				<option value="lima6">6ta Promocion Lima</option>	
+			    <option value="0">Selecciona una opción</option>
+				<option value="perubian">PERÚ</option>
+				<option value="mexic">MÉXICO</option>
+				<option value="chil">CHILE</option>	
 				
 			</select>
 
+
 		    <button  type="button" class="btn" id="ocultar">OCULTAR</button>
 		    <button  type="button" class="btn" id="mostrar">MOSTRAR CODERS</button>
-		    <div class="coders">
+
+		    <div id="coders">
 
 		   
 
 				     
-					<div id="lima-5">
-						<a href=""><img src="assets/img/lima5/andrea.jpg"  class="img-circle img-thumbnail lima5 "></a>
-						<a href=""><img src="assets/img/lima5/ariadna.jpg"  class="img-circle img-thumbnail lima5"></a>
-						<a href=""><img src="assets/img/lima5/carito.jpg"  class="img-circle img-thumbnail lima5"></a><br>
-						<a href=""><img src="assets/img/lima5/cristy.jpg"  class="img-circle img-thumbnail lima5"></a>
-						<a href=""><img src="assets/img/lima5/paola.jpg"  class="img-circle img-thumbnail lima5"></a>
-						<a href=""><img src="assets/img/lima5/teresa.jpg"  class="img-circle img-thumbnail lima5"></a>
+					<div id="mexico">
+						<a href=""><img src="assets/img/mexico/andrea.jpg"  class="img-circle img-thumbnail mexic "></a>
+						<a href=""><img src="assets/img/mexico/ariadna.jpg"  class="img-circle img-thumbnail mexic"></a>
+						<a href=""><img src="assets/img/mexico/carito.jpg"  class="img-circle img-thumbnail mexic"></a><br>
+						<a href=""><img src="assets/img/mexico/cristy.jpg"  class="img-circle img-thumbnail mexic"></a>
+						<a href=""><img src="assets/img/mexico/paola.jpg"  class="img-circle img-thumbnail mexic"></a>
+						<a href=""><img src="assets/img/mexico/teresa.jpg"  class="img-circle img-thumbnail mexic"></a>
 					</div>
-					<div id="lima-6">
+					<div id="chile">
 						
-						<a href=""><img src="assets/img/lima6/arantza.jpg"    class="img-circle img-thumbnail img-thumbnail lima6"></a>
-						<a href=""><img src="assets/img/lima6/daguiana.jpg"   class="img-circle img-thumbnail img-thumbnail lima6"></a>
-						<a href=""><img src="assets/img/lima6/elizabeth.jpg"  class="img-circle img-thumbnail lima6"></a>
+						<a href=""><img src="assets/img/chile/arantza.jpg"    class="img-circle img-thumbnail img-thumbnail chil"></a>
+						<a href=""><img src="assets/img/chile/daguiana.jpg"   class="img-circle img-thumbnail img-thumbnail chil"></a>
+						<a href=""><img src="assets/img/chile/elizabeth.jpg"  class="img-circle img-thumbnail chil"></a>
 						<br>
-						<a href=""><img src="assets/img/lima6/janine.jpg"    class="img-circle img-thumbnail lima6"></a>
-						<a href=""><img src="assets/img/lima6/more.jpg"       class="img-circle img-thumbnail lima6"></a>
-						<a href=""><img src="assets/img/lima6/rosario.jpg"   class="img-circle img-thumbnail lima6"></a>
+						<a href=""><img src="assets/img/chile/janine.jpg"    class="img-circle img-thumbnail chil"></a>
+						<a href=""><img src="assets/img/chile/more.jpg"       class="img-circle img-thumbnail chil"></a>
+						<a href=""><img src="assets/img/chile/rosario.jpg"   class="img-circle img-thumbnail chil"></a>
 						
 					</div>
-					<div id="chile-4">
-						<a href=""><img src="assets/img/chile4/andrea.jpg"  class="img-circle img-thumbnail chile"></a>
-						<a href=""><img src="assets/img/chile4/berenisse.jpg"  class="img-circle img-thumbnail chile"></a>
-					    <a href=""><img src="assets/img/chile4/caterina.jpg"  class="img-circle img-thumbnail chile"></a><br>
-					    <a href=""><img src="assets/img/chile4/daniela.jpg"  class="img-circle img-thumbnail chile"></a>
-					    <a href=""><img src="assets/img/chile4/francisca.jpg"  class="img-circle img-thumbnail chile"></a>
-					    <a href=""><img src="assets/img/chile4/katerine.jpg" class="img-circle img-thumbnail chile"></a>
+					<div id="peru">
+						<a href=""><img src="assets/img/perubian/andrea.jpg"  class="img-circle img-thumbnail perubian"></a>
+						<a href=""><img src="assets/img/perubian/berenisse.jpg"  class="img-circle img-thumbnail perubian"></a>
+					    <a href=""><img src="assets/img/perubian/caterina.jpg"  class="img-circle img-thumbnail perubian"></a><br>
+					    <a href=""><img src="assets/img/perubian/daniela.jpg"  class="img-circle img-thumbnail perubian"></a>
+					    <a href=""><img src="assets/img/perubian/francisca.jpg"  class="img-circle img-thumbnail perubian"></a>
+					    <a href=""><img src="assets/img/perubian/katerine.jpg" class="img-circle img-thumbnail perubian"></a>
 					</div>
 			</div>
 		</div>
-		
 	</div>
 </div>
 
@@ -75,36 +78,40 @@
 		
 		<div class="col-md-10 black">
 			<div class="col-md-4 selection">
-			
+					<div class="col-md-12 "  id="fotos_mexico">
+						
+					</div>
+					<div class="col-md-12 "  id="fotos_peru">
+						
+					</div>
+					<div class="col-md-12 "  id="fotos_chile">
+							
+					</div>
+		
 			</div>
 			
 
 			<div class="col-md-4 complet form-group">
 				
-					<p><strong>Puntos:0 puntos</strong></p>
-				  <label for="usr">Ingrese su nombre:</label>
+				  <p class="score-punt">Puntos:<span class="puntaje"  id="score"> 0 </span>puntos</p>
+				  <label for="usr">Ingrese su nombre:</label><br><br>
 				  <input type="text" class="form-control" id="usr" placeholder="nombre">
 				  <br><br>
 				  <button  type="button" class="btn">COMPROBAR</button>
-				
-						
+				  <br>
+				  <br>
+		
 			</div>
 		</div>
 
 	</div>
 </div>
 
-
-
-
-
-
-
-
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/chile.js"></script>
+    <script src="assets/js/mexico.js"></script>
+    <script src="assets/js/peru.js"></script>
 </body>
 </html>
