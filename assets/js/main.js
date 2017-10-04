@@ -122,23 +122,23 @@ $(function(){
      imgMexico.append(contenedorImg);
      contenedorImg.append(img);
 
-     comprobar.click(function(e){
-       e.preventDefault();
-       if(nombre_imput.val().toLowerCase() == fotos-mexico[i].nombre.toLowerCase()){
-         alert("Muy bien, has ganado 5 puntos.");
-         puntos = puntos + 5;
-         i++;
-         $('#score').html("<strong>"+ puntos +"</strong>");
-         setTimeout(function () {
-           img.attr("src", 'assets/fotos/mexico/' + mexico[i+1].imagen);
-           img.attr("alt",peru[i+1].nombre);
-           contenedorImg.append(img);
-           imgMexico.append(contenedorImg);
-         },3000);
-       }else {
-         alert("Sigue intentando.");
-       }
-     });
+     // comprobar.click(function(e){
+     //   e.preventDefault();
+     //   if(nombre_imput.val().toLowerCase() == fotos-mexico[i].nombre.toLowerCase()){
+     //     alert("Muy bien, has ganado 5 puntos.");
+     //     puntos = puntos + 5;
+     //     i++;
+     //     $('#score').html("<strong>"+ puntos +"</strong>");
+     //     setTimeout(function () {
+     //       img.attr("src", 'assets/fotos/mexico/' + mexico[i+1].imagen);
+     //       img.attr("alt",imgMexico[i+1].nombre);
+     //       contenedorImg.append(img);
+     //       imgMexico.append(contenedorImg);
+     //     },3000);
+     //   }else {
+     //     alert("Sigue intentando.");
+     //   }
+     // });
 
    return imgMexico;
  });
