@@ -1,6 +1,6 @@
 //function especificamente del juego
 $(function(){
-swal("EMPEZAMOS EL JUEGO", "Listo!");
+swal("EMPEZEMOS EL JUEGO", "Listo!");
 
 	var i = 0;
   var numeroAleatorio=[i];
