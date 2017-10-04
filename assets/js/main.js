@@ -1,5 +1,5 @@
 //function especificamente del juego
-// $(function(){
+$(function(){
 swal("EMPESAMOS EL JUEGO", "Listo!");
 
 	var i = 0;
@@ -8,44 +8,19 @@ swal("EMPESAMOS EL JUEGO", "Listo!");
   var comprobar = $('#comprobar');
   var puntos = 0;
 
-var sedes=[
-  {
-    pais:"mexico",
-    coders:mexico
-
-  },
-    {
-    pais:"peru",
-    coders:peru
-
-  },
-
-  {
-    pais:"chile",
-    coders:chile
-
-  }];
-
-
 var coders_mexico=[
-"andrea.jpg","carito.jpg","ariadna.jpg","cristy.jpg","paola.jpg","teresa.jpg"
+"andrea.jpg",    "carito.jpg",   "ariadna.jpg",   "cristy.jpg",  "paola.jpg",   "teresa.jpg"
 ];
+var nombreMexico=[
+"andrea","carito","ariadna","cristy","paola","teresa"];
 
 function imagenAleatoria(coders_mexico){
   
     var elemento=document.body
     var imagenes=coders_mexico;
-    
-    var aleatorio=Math.floor(Math.random()*imagenes);
-   
-    // imgContainer="<img src=\""+aleatorio+".png\"></img>"
-    // setTimeout(imagenAleatoria,1000)
+    var aleatorio=Math.floor(Math.random()*imagenes.length);
     return aleatorio;
 }
-
-
-// var imgContainer = $('<div class="col-md-4 selection></div>');
-//  imgContainer.append(foto);
 
 function mostrarImagenes(array,objet){
   var objet=[];
@@ -55,9 +30,24 @@ function mostrarImagenes(array,objet){
 imgContainer.attr("src",coders_mexico);
 console.log(mostrar);
 }
+});
+
+// ------------oculta las mimagenes y  si  desea  lo  esconde----------------------------- 
 
 
+$(document).ready(function() {
+    $("#ocultar") .click(function(){
+      $("#coders") .hide();
+      
+     });
+});
+$(document).ready(function() {
+    $("#mostrar") .click(function(){
+      $("#coders") .show();
+      
+     });
 
+});
 
 //imagenes aleatorias
 
@@ -70,20 +60,20 @@ console.log(mostrar);
 
 //al seleccionar la sedes 
 
-$("select").change(function(e){ 
-  e.preventDefault();
-  var option = $('#select').val();
-  if(option == "sede"){
-    $('#fotos-mexico').addClass("none");
-    $('#fotos-peru').toggleClass("none");
-     $('#fotos-chile').toggleClass("none");
-  }else {
-    $('#fotos-peru').addClass("none");
-    $('#fotos-mexico').toggleClass("none");
-     $('#fotos-chile').toggleClass("none");
-  }
-  swal("Bien escogiste la sede"+sede );
-});
+// $("select").change(function(e){ 
+//   e.preventDefault();
+//   var option = $('#select').val();
+//   if(option == "sede"){
+//     $('#fotos-mexico').addClass("none");
+//     $('#fotos-peru').toggleClass("none");
+//      $('#fotos-chile').toggleClass("none");
+//   }else {
+//     $('#fotos-peru').addClass("none");
+//     $('#fotos-mexico').toggleClass("none");
+//      $('#fotos-chile').toggleClass("none");
+//   }
+//   swal("Bien escogiste la sede"+sede );
+// });
 
 
 
@@ -107,48 +97,51 @@ $("select").change(function(e){
   // parent.append(formComplet);
 
 
-$(function(){
-   var imgPeru= $('#fotos-peru');
-   var contenedorImg = $('<div class="contenedorImg col-md-12"></div>');
-   var img = $('<img src="" alt=""  class="img-circle img-thumbnail">');
-    // imgContainer.append(foto);
+// $(function(){
+//    var imgPeru= $('#fotos-peru');
+//    var contenedorImg = $('<div class="contenedorImg col-md-12"></div>');
+//    var img = $('<img src="" alt=""  class="img-circle img-thumbnail">');
+//     // imgContainer.append(foto);
 
-     img.attr("src", 'assets/img/perubian/' + perubian[i].imagen);
-     img.attr("alt",perubian[i].nombre);
-     imgPeru.append(contenedorImg);
-     contenedorImg.append(img);
+//      img.attr("src", 'assets/img/perubian/' + perubian[i].imagen);
+//      img.attr("alt",perubian[i].nombre);
+//      imgPeru.append(contenedorImg);
+//      contenedorImg.append(img);
 
-     comprobar.click(function(e){
-       e.preventDefault();
-       if(nombre_imput.val().toLowerCase() == perubian[i].nombre.toLowerCase()){
-         alert("Muy bien, has ganado 5 puntos.");
-         puntos = puntos + 5;
-         i++;
-         $('#score').html("<strong>"+ puntos +"</strong>");
-         setTimeout(function () {
-           img.attr("src", 'assets/fotos/perubian/' + perubian[i+1].imagen);
-           img.attr("alt",perubian[i+1].nombre);
-           contenedorImg.append(img);
-           imgPeru.append(contenedorImg);
-         },3000);
-       }else {
-         alert("Sigue intentando.");
-       }
-     });
+//      comprobar.click(function(e){
+//        e.preventDefault();
+//        if(nombre_imput.val().toLowerCase() == perubian[i].nombre.toLowerCase()){
+//          alert("Muy bien, has ganado 5 puntos.");
+//          puntos = puntos + 5;
+//          i++;
+//          $('#score').html("<strong>"+ puntos +"</strong>");
+//          setTimeout(function () {
+//            img.attr("src", 'assets/fotos/perubian/' + perubian[i+1].imagen);
+//            img.attr("alt",perubian[i+1].nombre);
+//            contenedorImg.append(img);
+//            imgPeru.append(contenedorImg);
+//          },3000);
+//        }else {
+//          alert("Sigue intentando.");
+//        }
+//      });
 
-   return imgPeru;
- });
+//    return imgPeru;
+//  });
 
-// para imagenes de mexico
-$(function(){
-  var imgMexico= $('#fotos-mexico');
-  var contenedorImg = $('<div class="contenedorImg col-md-12"></div>');
-  var img = $('<img src="" alt=""  class="img-circle img-thumbnail">');
+// // para imagenes de mexico
+// $(function(){
+//   var imgMexico= $('#fotos-mexico');
+//   var contenedorImg = $('<div class="contenedorImg col-md-12"></div>');
+//   var img = $('<img src="" alt=""  class="img-circle img-thumbnail">');
 
-     img.attr("src", 'assets/img/mexico/' + mexico[i].imagen);
-     img.attr("alt",mexico[i].nombre);
-     imgMexico.append(contenedorImg);
-     contenedorImg.append(img);
+//      img.attr("src", 'assets/img/mexico/' + mexico[i].imagen);
+//      img.attr("alt",mexico[i].nombre);
+//      imgMexico.append(contenedorImg);
+//      contenedorImg.append(img);
+//         return imgMexico;
+//  });
+
 
      // comprobar.click(function(e){
      //   e.preventDefault();
@@ -168,8 +161,6 @@ $(function(){
      //   }
      // });
 
-   return imgMexico;
- });
 
 
 
@@ -194,26 +185,6 @@ $(function(){
 
 // });
 
-
-
-
-
-
-
-// oculta las mimagenes y  si  desea  lo  esconde 
-// $(document).ready(function() {
-//     $("#ocultar") .click(function(){
-//     	$("#coders") .hide();
-    	
-//      });
-// });
-// $(document).ready(function() {
-//     $("#mostrar") .click(function(){
-//     	$("#coders") .show();
-    	
-//      });
-
-// });
 
 
 
