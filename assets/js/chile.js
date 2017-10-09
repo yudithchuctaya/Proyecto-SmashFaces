@@ -1,25 +1,25 @@
 var chile=[
 {
-	imagen:"arantza.jpg",
-	nombre:"arantza"
+	image:"arantza.jpg",
+	name:"arantza"
 },
 {
-	imagen:"daguiana.jpg",
-	nombre:"daguiana"
+	image:"daguiana.jpg",
+	name:"daguiana"
 },
 {
-	imagen:"elizabeth.jpg",
-	nombre:"elizabeth"
+	image:"elizabeth.jpg",
+	name:"elizabeth"
 },
 {
-	imagen:"janine.jpg",
-	nombre:"janine"
+	image:"janine.jpg",
+	name:"janine"
 },
 {
-	imagen:"more.jpg",
-	nombre:"more"
+	image:"more.jpg",
+	name:"more"
 },
 {
-	imagen:"rosario.jpg",
-	nombre:"rosario"
+	image:"rosario.jpg",
+	name:"rosario"
 }];

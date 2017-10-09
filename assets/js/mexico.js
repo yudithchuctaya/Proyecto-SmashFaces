@@ -1,23 +1,23 @@
-var mexico=[
+var mexico =[
 {
-	imagen:"andrea.jpg",
-	nombre:"andrea"
+	image:"andrea.jpg",
+	name:"andrea"
 },{
-	imagen:"ariadna.jpg",
-	nombre:"ariadna"
+	image:"ariadna.jpg",
+	name:"ariadna"
 },{
-	imagen:"carito.jpg",
-	nombre:"carito"
+	image:"carito.jpg",
+	name:"carito"
 },
 {
-	imagen:"cristy.jpg",
-	nombre:"cristy"
+	image:"cristy.jpg",
+	name:"cristy"
 },
 {
-	imagen:"paola.jpg",
-	nombre:"paola"
+	image:"paola.jpg",
+	name:"paola"
 },
 {
-	imagen:"teresa.jpg",
-	nombre:"teresa"
+	image:"teresa.jpg",
+	name:"teresa"
 }];

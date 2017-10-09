@@ -3,118 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>SmashFaces</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Rokkitt:900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<div class="container">
-	<div class="row section">
-		<div class="col-md-12 text">
-		<h1>JUEGO</h1>
-			<h2>
-				Smash Faces
-			</h2>
-			<hr>
-			<p>Bienvenidas al juego de Smach Faces,tu mision es poder identificar a todas tus compañeras de clase integrado para ellos su nombre .Tiene 5 oportunidades antes de perder 1 punto y pasar a la siguiente.</p>
+ <section> 
+ 		<div class="container">			
+		        <div class="col-md-12 text">
+						<h1>JUEGO</h1>
+							<h2>
+								Smash Faces
+							</h2>
+							<hr>
+							<p>Bienvenidas al juego de Smach Faces,tu mision es poder identificar a todas tus compañeras de clase integrado para ellos su nombre .Tiene 5 oportunidades antes de perder 1 punto y pasar a la siguiente.</p>
+				</div>		
+ 
 
-		</div>
-		<div class="col-md-12 option">
-			Elige tu sede:
-			<select  id ="select">
-			    <option value="0">Selecciona una opción</option>
-				<option value="perubian">PERÚ</option>
-				<option value="mexic">MÉXICO</option>
-				<option value="chil">CHILE</option>	
 				
-			</select>
-
-
-		    <button  type="button" class="btn" id="ocultar">OCULTAR</button>
-		    <button  type="button" class="btn" id="mostrar">MOSTRAR CODERS</button>
-
-		    <div id="coders">
-
-		   
-
-				     
-					<div id="mexico">
-						<a href=""><img src="assets/img/mexico/andrea.jpg"  class="img-circle img-thumbnail mexic "></a>
-						<a href=""><img src="assets/img/mexico/ariadna.jpg"  class="img-circle img-thumbnail mexic"></a>
-						<a href=""><img src="assets/img/mexico/carito.jpg"  class="img-circle img-thumbnail mexic"></a><br>
-						<a href=""><img src="assets/img/mexico/cristy.jpg"  class="img-circle img-thumbnail mexic"></a>
-						<a href=""><img src="assets/img/mexico/paola.jpg"  class="img-circle img-thumbnail mexic"></a>
-						<a href=""><img src="assets/img/mexico/teresa.jpg"  class="img-circle img-thumbnail mexic"></a>
-					</div>
-		<!-- 			<div id="chile">
-						
-						<a href=""><img src="assets/img/chile/arantza.jpg"    class="img-circle img-thumbnail img-thumbnail chil"></a>
-						<a href=""><img src="assets/img/chile/daguiana.jpg"   class="img-circle img-thumbnail img-thumbnail chil"></a>
-						<a href=""><img src="assets/img/chile/elizabeth.jpg"  class="img-circle img-thumbnail chil"></a>
-						<br>
-						<a href=""><img src="assets/img/chile/janine.jpg"    class="img-circle img-thumbnail chil"></a>
-						<a href=""><img src="assets/img/chile/more.jpg"       class="img-circle img-thumbnail chil"></a>
-						<a href=""><img src="assets/img/chile/rosario.jpg"   class="img-circle img-thumbnail chil"></a>
-						
-					</div>
-					<div id="peru">
-						<a href=""><img src="assets/img/perubian/andrea.jpg"  class="img-circle img-thumbnail perubian"></a>
-						<a href=""><img src="assets/img/perubian/berenisse.jpg"  class="img-circle img-thumbnail perubian"></a>
-					    <a href=""><img src="assets/img/perubian/caterina.jpg"  class="img-circle img-thumbnail perubian"></a><br>
-					    <a href=""><img src="assets/img/perubian/daniela.jpg"  class="img-circle img-thumbnail perubian"></a>
-					    <a href=""><img src="assets/img/perubian/francisca.jpg"  class="img-circle img-thumbnail perubian"></a>
-					    <a href=""><img src="assets/img/perubian/katerine.jpg" class="img-circle img-thumbnail perubian"></a>
-					</div> -->
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<div class="container">
-	<div class="row section">
-		
-		<div class="col-md-10 black">
-			<div class="col-md-4 selection">
-					<div class="col-md-12 "  id="fotos_mexico">
-					<img src="assets/img/perubian/berenisse.jpg"  class="img-circle img-thumbnail">
-					</div>
-					<div class="col-md-12 "  id="fotos_peru">
-						
-					</div>
-					<div class="col-md-12 "  id="fotos_chile">
-							
-					</div>
-		
-			</div>
 			
+	
+		 <!-- <div class="col-md-12 col-sm-12 section"> -->
+			<div class="col-md-12 option">
+					<label >Elige tu sede:</label>
+					<select  id ="select">
+					    <option hidden="" ="">Sede</option>
+						<option value="mexico">MÉXICO</option>
+						<option value="chile">CHILE</option>	
+					</select>
 
-			<div class="col-md-4 complet section form-group">
-				
-				  <p class="score-punt">Puntos:<span class="puntaje"  id="score"> 0 </span>puntos</p>
-				  <label for="usr">Ingrese su nombre:</label><br><br>
-				  <input type="text" class="form-control" id="ingresar_name" placeholder="nombre">
-				  <br><br>
-				  <button  type="button" class="btn"  id="comprobar">COMPROBAR</button>
-				  <!-- <p class="alert"></p> -->
-				  <br>
-				  <br>
-
-		
+						<label class="right">Puntos: <span id="puntaje">0</span> puntos</label>
 			</div>
-		</div>
-
-	</div>
-</div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+			      
+			 <div class="col-md-12 col-sm-12" id="black">
+			            <div class="col-xs-12 col-sm-4 col-md-4"><img src="" class="img-circle img-thumbnail coders"></div>
+			              <div class="ocultar col-xs-12 col-sm-6 col-md-6">
+				                <p>Ingresa su nombre:</p>
+				                <form class="text-center col-md-8">
+				                  <input type="text" placeholder="NOMBRE">
+				                  <button>COMPROBAR</button>
+				                  <br><br>
+				                    <p class="mensaje text-center"></p>
+				                </form>           
+			              
+			              </div>
+			 </div>
+		 
+	  </div>
+</section>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/chile.js"></script>
     <script src="assets/js/mexico.js"></script>
-    <script src="assets/js/peru.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
